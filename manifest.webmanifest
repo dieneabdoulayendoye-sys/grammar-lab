@@ -1,0 +1,19 @@
+{
+  "name": "Grammar Lab - Learn English Grammar",
+  "short_name": "Grammar Lab",
+  "description": "Interactive English grammar lessons, quizzes and flashcards.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fbfaf6",
+  "theme_color": "#153c37",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

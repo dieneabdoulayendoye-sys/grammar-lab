@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Grammar Lab | Learn English Grammar</title>
 <meta name="description" content="An interactive English grammar learning and practice app.">
+<meta name="theme-color" content="#153c37">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
 <style>
 :root{--ink:#18242d;--muted:#687780;--paper:#fbfaf6;--card:#fff;--line:#dce4df;--teal:#087f73;--teal2:#dff4ed;--orange:#ee8b4c;--red:#c95353;--shadow:0 12px 35px #193b2c14}
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
@@ -95,5 +98,6 @@ function revealCard(){document.getElementById("flashcard").classList.add("reveal
 document.getElementById("homeLessons").innerHTML=lessons.slice(0,3).map(l=>'<div class="lesson"><div><span class="tag">'+l.level+'</span><b>'+l.title+'</b><small>'+l.desc+'</small></div><button class="btn" onclick="openLesson(\''+l.id+'\')">Study →</button></div>').join("");
 document.getElementById("sourceList").innerHTML=sources.map(s=>'<div class="source"><a href="'+s[2]+'" target="_blank" rel="noopener">'+s[0]+' ↗</a><div class="muted">'+s[1]+'</div></div>').join("");
 updateStats();renderCard();
+if("serviceWorker" in navigator) window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js"));
 </script>
 </body></html>
