@@ -1,7 +1,7 @@
 {
-  "name": "Grammar Lab - Learn English Grammar",
-  "short_name": "Grammar Lab",
-  "description": "Interactive English grammar lessons, quizzes and flashcards.",
+  "name": "MISTER DIENE'S APP - English Grammar",
+  "short_name": "MISTER DIENE'S APP",
+  "description": "MISTER DIENE'S APP: interactive English grammar lessons, quizzes and flashcards.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
