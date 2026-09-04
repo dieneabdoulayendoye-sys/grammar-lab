@@ -24,6 +24,29 @@ h2,h3{line-height:1.15}h3{margin:0 0 8px}.muted{color:var(--muted)}.lesson-list{
 .flashcard{min-height:250px;display:grid;place-items:center;text-align:center;background:linear-gradient(145deg,#fff,#eef8f4);cursor:pointer}.flashcard .term{font-size:38px;font-weight:900}.flashcard .definition{display:none;max-width:580px;font-size:18px}.flashcard.revealed .term{display:none}.flashcard.revealed .definition{display:block}.note{background:#fff8e9;border:1px solid #f2d39f;border-radius:10px;padding:13px}.source{padding:12px 0;border-bottom:1px solid var(--line)}.source a{color:var(--teal);font-weight:700}.source:last-child{border:0}
 @media(max-width:900px){.shell{display:block}aside{position:static;height:auto;padding:16px}.brand{margin-bottom:14px}nav{display:flex;overflow:auto}nav button{white-space:nowrap}main{padding:24px 18px}.hero,.stats,.half,.third{grid-column:span 12}}
 @media(max-width:560px){.top{display:block}.streak{display:inline-block;margin-top:16px}.stats{grid-template-columns:1fr 1fr}.lesson{align-items:flex-start;flex-direction:column}}
+/* Modern visual layer */
+:root{--ink:#17242c;--muted:#71808a;--paper:#f4f8f6;--card:#ffffffd9;--line:#d8e5df;--teal:#087f73;--teal-dark:#07584f;--teal2:#dff6ef;--orange:#f29a5b;--shadow:0 20px 55px #17493a12}
+body{background:radial-gradient(circle at 88% 3%,#dff4ec 0,transparent 26%),radial-gradient(circle at 12% 98%,#fff0df 0,transparent 24%),var(--paper);letter-spacing:.005em}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.28;background-image:linear-gradient(#fff0 95%,#b8d1c81c 100%);background-size:100% 5px}
+aside{background:linear-gradient(165deg,#123b36 0%,#0d2e2d 100%);box-shadow:12px 0 40px #092b251f;padding:30px 20px}
+.brand{margin-bottom:40px}.mark{background:linear-gradient(135deg,#ffc47a,#ee8b4c);box-shadow:0 8px 22px #f4b06c3d}.brand b{letter-spacing:-.02em}
+nav button{transition:background .2s,transform .2s,color .2s}nav button:hover{transform:translateX(3px)}nav button.active{background:linear-gradient(90deg,#2a6c60,#20594f);box-shadow:inset 3px 0 #f4b06c,0 8px 20px #061c1830}
+.side-progress{margin-top:34px}.bar{background:#ffffff17}.bar i{background:linear-gradient(90deg,#f4b06c,#ffd08d)}
+main{padding:44px 48px}.top{margin-bottom:32px}.eyebrow{letter-spacing:.14em;font-size:11px}.top h1{font-weight:850;color:#14252b;letter-spacing:-.055em}.top p{font-size:16px}
+.streak{box-shadow:0 10px 28px #b7722b18;border-radius:15px}.streak b{font-size:25px}
+.card{background:var(--card);backdrop-filter:blur(12px);border-color:#d5e4de;border-radius:20px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}.card:hover{box-shadow:0 22px 60px #17493a1c}
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#e1f5ed 0%,#fff 72%);min-height:260px;padding:30px}.hero:after{content:"G";position:absolute;right:28px;bottom:-44px;color:#087f7310;font-size:220px;font-weight:900;line-height:1}.hero>*{position:relative;z-index:1}.hero h2{font-size:31px;letter-spacing:-.04em}
+.stats{gap:14px}.stat{border:1px solid #d9ebe3;background:linear-gradient(145deg,#f3fbf7,#eaf5f0);transition:transform .2s}.stat:hover{transform:translateY(-3px)}.stat strong{font-weight:850}
+.btn{transition:transform .2s,box-shadow .2s,background .2s;border-color:#c7ded6;box-shadow:0 4px 12px #17493a0b}.btn:hover{box-shadow:0 8px 18px #17493a18}.btn.primary{background:linear-gradient(135deg,#0a8d7e,#075e57);box-shadow:0 8px 18px #087f7330}.btn.orange{background:linear-gradient(135deg,#f4a467,#e47b40)}
+.lesson{border-color:#dfebe6;border-radius:14px;padding:16px 18px;transition:transform .2s,box-shadow .2s,border-color .2s}.lesson:hover{transform:translateY(-2px);border-color:#9bcec0;box-shadow:0 10px 25px #17493a10}.lesson b{font-size:16px;margin-top:7px}.lesson small{display:block;margin-top:2px}
+.tag{background:#dff6ef;color:#08766b;letter-spacing:.04em}
+.search{max-width:620px;padding:13px 16px;border-radius:12px;box-shadow:0 5px 18px #17493a08}.filters button{transition:.2s}.filters button:hover{border-color:#83bbae;color:var(--teal)}
+.quiz{border-top:4px solid var(--teal);padding:28px}.question{font-size:27px;letter-spacing:-.025em}.choice{border-color:#dce8e3;border-radius:12px;transition:.2s}.choice:hover{transform:translateX(3px);background:#f5fbf8}.choice.correct,.choice.wrong{transform:none}
+.flashcard{border:0;min-height:310px;border-radius:24px;background:radial-gradient(circle at 75% 20%,#d6f1e8,transparent 30%),linear-gradient(145deg,#fff,#e9f7f1);box-shadow:0 24px 65px #17493a17}.flashcard:after{content:"TAP TO REVEAL";position:absolute;bottom:25px;font-size:11px;letter-spacing:.16em;color:#7c9a91}.flashcard.revealed:after{content:""}
+.flashcard .term{font-size:48px;color:#075e57;letter-spacing:-.05em}.flashcard .definition{font-size:19px;color:#36534c}
+.source{padding:17px 4px}.source a{font-size:16px}
+@media(max-width:900px){main{padding:30px 22px}aside{box-shadow:0 8px 25px #092b251f}.hero{min-height:230px}}
+@media(max-width:560px){main{padding:24px 15px}.hero{padding:23px}.hero:after{font-size:150px;right:5px}.hero h2{font-size:25px}.question{font-size:22px}.flashcard{min-height:260px}.flashcard .term{font-size:38px}}
 </style>
 </head>
 <body>
